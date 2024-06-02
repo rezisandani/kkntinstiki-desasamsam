@@ -1,0 +1,21 @@
+body {
+    /* min-height: 4000px; */
+}
+
+
+
+
+.jumbotron {
+    padding-top: 7rem;
+    background-color: #e2edff;
+    /* background-color: #7181cf; */
+}
+
+#program {
+    background-color: #e2edff;
+}
+
+/* agar pas klik navbar jadi pas */
+section {
+    padding-top: 5rem;
+}
