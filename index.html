@@ -7,12 +7,17 @@
 
     <!-- Bootstrap CSS -->
     <link
-      href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css"
-      rel="stylesheet"
-      integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC"
-      crossorigin="anonymous"
+    href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css"
+    rel="stylesheet"
+    integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC"
+    crossorigin="anonymous"
     />
     <link rel="stylesheet" href="style.css" />
+    <!-- Bootstrap CSS  END-->
+
+     <!-- AOS -->
+     <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+     <!-- AOS END -->
 
     <title>KKNT INSTIKI | DESA SAMSAM</title>
   </head>
@@ -70,9 +75,15 @@
         class="rounded-circle img-thumbnail"
       />
       <h1 class="display-4">KKNT INSTIKI | DESA SAMSAM</h1>
+      <!-- TULISAN KULIAH KERJA NYATA TEMATIK INSTIKI INDONESIA DI DESA SAMSAM PINDAH KE BAWAH -->
       <p class="lead">
-        KULIAH KERJA NYATA TEMATIK INSTIKI INDONESIA DI DESA SAMSAM
+        
       </p>
+      <p class="tahun">
+        
+      </p>
+      
+      
       <!-- GELOMBANG -->
       <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 320">
         <path
@@ -94,7 +105,8 @@
           </div>
         </div>
         <div class="row justify-content-around fs-5 text-center">
-          <div class="col-md-4">
+           <!-- Contoh penerapan AOS, data-aos="fade-right" DKK-->
+           <div class="col-md-4" data-aos="fade-right" data-aos-durations="1000">
             <h2>KKNT INSTIKI</h2>
             <p>
               Lorem ipsum dolor sit amet consectetur adipisicing elit. Ea dolore
@@ -102,7 +114,7 @@
               repudiandae?
             </p>
           </div>
-          <div class="col-md-4">
+          <div class="col-md-4" data-aos="fade-left" data-aos-durations="1000" data-aos-delay="200">
             <h2>DESA SAMSAM</h2>
             <p>
               Lorem ipsum dolor sit amet consectetur adipisicing elit. Fuga
@@ -136,7 +148,7 @@
           <!--PENTING! col-4 artinya kita akan bikin 4 kolom program -->
           <!-- program 1 -->
           <div class="col-md-4 mb-3">
-            <div class="card">
+            <div class="card" data-aos="flip-right" data-aos-durations="500">
               <img
                 src="img/program/survey.jpg"
                 class="card-img-top"
@@ -156,7 +168,8 @@
 
           <!-- program 2 -->
           <div class="col-md-4 mb-3">
-            <div class="card">
+            <div class="card" data-aos="flip-right" data-aos-durations="500" data-aos-delay="100">
+
               <img
                 src="img/program/damkar.jpg"
                 class="card-img-top"
@@ -175,9 +188,10 @@
 
           <!-- program 3 -->
           <div class="col-md-4 mb-3">
-            <div class="card">
+            <div class="card" data-aos="flip-right" data-aos-durations="500" data-aos-delay="200">
+
               <img
-                src="img/program/survey2.jpg"
+                src="img/program/haha.png"
                 class="card-img-top"
                 alt="Survey irigasi"
               />
@@ -195,7 +209,7 @@
 
           <!-- program 4 -->
           <div class="col-md-4 mb-3">
-            <div class="card">
+            <div class="card" data-aos="flip-right" data-aos-durations="500" data-aos-delay="300">
               <img
                 src="img/program/survey2.jpg"
                 class="card-img-top"
@@ -215,9 +229,9 @@
 
           <!-- program 5 -->
           <div class="col-md-4 mb-3">
-            <div class="card">
+            <div class="card" data-aos="flip-right" data-aos-durations="500" data-aos-delay="400">
               <img
-                src="img/program/survey2.jpg"
+                src="img/program/gotongroyong.png"
                 class="card-img-top"
                 alt="Survey irigasi"
               />
@@ -232,16 +246,17 @@
             </div>
           </div>
           <!-- akhir program 5 -->
-          <!-- program 5 -->
+
+          <!-- program 6 -->
           <div class="col-md-4 mb-3">
-            <div class="card">
+            <div class="card" data-aos="flip-right" data-aos-durations="500" data-aos-delay="500">
               <img
-                src="img/program/survey2.jpg"
+                src="img/program/survey.jpg"
                 class="card-img-top"
                 alt="Survey irigasi"
               />
               <div class="card-body">
-                <h4>Membantu mengolah sampah</h4>
+                <h4>Gotong royong</h4>
                 <p class="card-text">
                   Membantu mengolah sampah organik di Lorem ipsum dolor sit
                   amet, consectetur adipisicing elit. Laboriosam, alias.
@@ -250,7 +265,7 @@
               </div>
             </div>
           </div>
-          <!-- akhir program 5 -->
+          <!-- akhir program 6 -->
         </div>
       </div>
       <!-- GELOMBANG 3 -->
@@ -266,63 +281,79 @@
     <!--  AKHIR PROGRAM -->
 
     <!-- CONTACT -->
-    <section id="contact">
-      <div class="container">
-        <div class="row text-center">
-          <div class="col">
-            <h2>Contact Us</h2>
-          </div>
-        </div>
-        <div class="row justify-content-center">
-          <div class="col-md-6">
-            <!-- tata letak tombol -->
-            <form>
-                <!-- nama -->
-                <div class="mb-3">
-                    <label for="nama" class="nama"
-                    >Nama Lengkap</label
-                    >
-                    <input
-                    type="text"
-                    class="form-control"
-                    id="nama"
-                    aria-describedby="nama"
-                    />
-                </div>
-                <!-- akhir nama -->
-
-                <!-- email -->
-                <div class="mb-3">
-                    <label for="email" class="form-label"
-                    >Email</label
-                    >
-                    <input
-                    type="email"
-                    class="form-control"
-                    id="email"
-                    aria-describedby="email"
-                    />
-                </div>
-                <!-- akhir email -->
-
-                <!-- Komen -->
-                <div class="mb-3">
-                    <label for="pesan" class="pesan">Pesan</label>
-                    <textarea class="form-control" id="pesan" rows=""></textarea>
-                  </div>
-
-                <!-- button -->
-              <button type="submit" class="btn btn-primary">Submit</button>
-            </form>
-            <!-- akhir tata letak tombol -->
-          </div>
-        </div>
+ <section id="contact">
+  <div class="container">
+    <div class="row text-center mb-2">
+      <div class="col">
+        <h2>Contact Me</h2>
       </div>
-      <!-- GELOMBANG 3 -->
-      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 320"><path fill="#0d6efd" fill-opacity="1" d="M0,256L34.3,261.3C68.6,267,137,277,206,256C274.3,235,343,181,411,176C480,171,549,213,617,229.3C685.7,245,754,235,823,197.3C891.4,160,960,96,1029,101.3C1097.1,107,1166,181,1234,197.3C1302.9,213,1371,171,1406,149.3L1440,128L1440,320L1405.7,320C1371.4,320,1303,320,1234,320C1165.7,320,1097,320,1029,320C960,320,891,320,823,320C754.3,320,686,320,617,320C548.6,320,480,320,411,320C342.9,320,274,320,206,320C137.1,320,69,320,34,320L0,320Z"></path></svg>
-      <!-- AKHIR GELOMBANG 3 -->
-    </section
-    <!-- AKHIR CONTACT -->
+    </div>
+  </div>
+
+
+  
+  <div class="row justify-content-center">
+    <div class="col-md-5">
+      <!-- INI NOTIP  -->
+      <div class="alert alert-success alert-dismissible fade show d-none my-alert "  role="alert">
+        <strong>Terimakasih!</strong> Pesan anda sudah kami terima.
+        <button type="button" class="btn-close" data-bs-dismiss="alert" aria-label="Close"></button>
+      </div>
+      <!-- NOTIP END -->
+      
+      <!-- ini nama form -->
+      <form name="rezi-contact-form">
+        <div class="mb-3">
+          <label for="Name" class="form-label">Nama Lengkap</label>
+          <!-- !PENTING! name yg kedua harus sama dengan kolom nama yg ada di google sheet Dst. -->
+          <input type="text" class="form-control" id="name" 
+          aria-describedby="name" name="nama"/>
+        <div class="mb-3">
+          <label for="email" class="form-label">Email</label>
+          <input type="email" class="form-control" id="email" 
+          aria-describedby="email" name="email"/>
+        </div>
+        <div class="mb-3">
+          <label for="pesan" class="form-label">Pesan</label>
+          <textarea class="form-control " id="pesan" name="pesan" rows="3"></textarea>
+        </div>
+        
+        <!-- INI BUTTON -->
+        <button type="submit" class="btn btn-primary btn-kirim ">Kirim</button>
+
+        <button class="btn btn-primary btn-loading d-none" type="button" disabled>
+          <span class="spinner-border spinner-border-sm" role="status" aria-hidden="true"></span>
+          Loading...
+        </button>
+        <!-- INI BUTTON end -->
+
+        <!-- END CONTACT -->
+
+        <!-- SOSMED  -->
+        <!-- <div class="container-content">
+          <a href="https://www.facebook.com/rezi.sndni" class="a-content">
+            <img src="img/projects/fb.png" class="img-content" />
+          
+          </a>
+          
+          <a href="https://api.whatsapp.com/send?phone=6281775236945&text=Assalamualikum" class="a-content">
+            <img src="img/projects/wa.png" class="img2-content" />
+         
+          </a>
+      
+          <a href="https://www.instagram.com/rezi_sndni/" class="a-content">
+            <img src="img/projects/ig2.png" class="img-content" />
+            
+          </a>
+        </div> -->
+        <!-- CONTENT END -->
+      </form>
+    </div>
+  </div>
+ </div>
+ <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 320"><path fill="#0d6efd" fill-opacity="1" d="M0,96L48,106.7C96,117,192,139,288,154.7C384,171,480,181,576,170.7C672,160,768,128,864,133.3C960,139,1056,181,1152,186.7C1248,192,1344,160,1392,144L1440,128L1440,320L1392,320C1344,320,1248,320,1152,320C1056,320,960,320,864,320C768,320,672,320,576,320C480,320,384,320,288,320C192,320,96,320,48,320L0,320Z"></path></svg>
+ </section>
+    <!-- END CONTACT -->
 
     <!-- FOOTER -->
     <footer class="bg-primary text-white text-center pb-3">
@@ -332,10 +363,68 @@
             class="text-white fw-bold ">KKNT DESA SAMSAM 2024</a></p>
             
     </footer>
+    <!-- BOOTSTRAP -->
     <script
       src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
       integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
       crossorigin="anonymous"
     ></script>
+    <!-- BOOTSTRAP END -->
+
+    <!-- AOS 2 -->
+<script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+<script>
+  // dibawah ini tempat perintahkan semuanya secar bersamaan,kalau blm ada perintah
+  AOS.init({
+    // ini untuk animasinya berjalan skali saat di dcrol
+    // once: true, 
+  });
+</script>
+<!-- AOS 2 END -->
+
+<!-- GSAP -->
+<script src="https://cdn.jsdelivr.net/npm/gsap@3.12.5/dist/gsap.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/gsap@3.12.5/dist/TextPlugin.min.js"></script>
+<!-- MY CODE to gsap -->
+  <script>
+    gsap.registerPlugin(TextPlugin)
+    gsap.to('.lead', {duration: 2, delay: 1.5, text:'KULIAH KERJA NYATA TEMATIK INSTIKI INDONESIA DI DESA SAMSAM'})
+    gsap.to('.tahun', {duration: 2, delay: 2.5, text: 'PERIODE 2024'})
+    gsap.from('.jumbotron img', { duration: 1, y: -100, opacity: 0, ease: 'back' ,});
+    gsap.from('.navbar', {duration: 1.5, y: -100, opacity:0, ease:'bounce.out'});
+    gsap.from('.display-4', {duration: 1, x: -50, opacity:0, ease:'back'});
+    </script>
+<!-- GSAP END -->
+
+ <!-- CONNECT TO GOOGLESHEET -->
+ <script>
+  const scriptURL = 'https://script.google.com/macros/s/AKfycbwM9SFeCFd3NSe5HpjsjyvZOykQCYTP6hwGpg7q0rWhWIjnlOb4cg7T19MOUQHH8L2T/exec';
+  // isi dalam kurung itu adalah nama formnya yg di atas
+  const form = document.forms['rezi-contact-form'];
+
+  const btnKirim = document.querySelector('.btn-kirim');
+  const btnLoading= document.querySelector('.btn-loading');
+  const myAlert = document.querySelector('.my-alert')
+
+  form.addEventListener('submit', (e) => {
+    e.preventDefault();
+    // ketika tombol submit di klik
+    // tampilkan tombol loading, hilangkan tombol kirim
+    btnLoading.classList.toggle('d-none');
+    btnKirim.classList.toggle('d-none');
+    fetch(scriptURL, { method: 'POST', body: new FormData(form) })
+      .then(response => {  
+    // tampilkan tombol kirim, hilangkan tombol loading
+    btnLoading.classList.toggle('d-none');
+    btnKirim.classList.toggle('d-none');
+    // tampilkan alert notip
+    myAlert.classList.toggle('d-none');
+    // reset formnya
+    form.reset();
+        console.log('Success!', response)
+      })
+      .catch(error => console.error('Error!', error.message));
+  });
+</script>
   </body>
 </html>
